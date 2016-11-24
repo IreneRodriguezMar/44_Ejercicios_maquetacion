@@ -1,0 +1,324 @@
+/*No tocar este codigo*/ 
+.sidebar-closed > #sidebar > ul {
+    display: none;
+}
+
+.sidebar-closed #main-content {
+    margin-left: 0px;
+}
+
+.sidebar-closed #sidebar {
+    margin-left: -180px;
+}
+
+/*Escribe aqui tu codigo */
+/*commons*/
+.bg-gainsboro{
+	background-color: gainsboro;
+}
+.black-bg{
+	background-color: #424A5D !important;
+}
+.c-white{
+	color: white;
+}
+.size-180{
+	font-size: 120%;
+}
+.size-200{
+	font-size: 200%;
+}
+.mg-5{
+	margin: 5%;
+}
+.mg-lf-3{
+	margin-left: 3%;
+}
+.mg-tp-2{
+	margin-top: 2%;
+}
+.mg-tp-5{
+	margin-top: 5%;
+}
+.mg-tp-9{
+	margin-top: 9%;
+}
+.fl-lf{
+	float: left;
+}
+.tam-text-25{
+	font-size: 15px;
+}
+/*menu desaparece*/
+
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  top: 51px;
+  left: 250px;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#wrapper.active {
+  padding-left: 0;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  padding-top: 70px;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 10%;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: gainsboro;
+  display: block;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  color: gainsboro;
+  text-align: center;
+  width: 20px;
+  line-height: 18px;
+	font-size: 20px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #E26EAB !important;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+	background-color: red;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #BB4676;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #BB4676;
+  background: none;
+}
+
+#menu-toggle {
+    text-decoration: none;
+    float: left;
+    color: #fff;
+    padding-right: 15px;
+}
+
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+}
+/*boton logout*/
+.logout{
+	background-color: #9C4C9D;
+	border-radius: 10%;
+	color: white;
+	padding: 20%;
+}
+.logout:hover{
+	color: white;
+	background-color: #E26EAB !important;
+}
+/*formulario login*/
+.form-login-heading{
+	color: white;
+	background-color: #68DFF0;
+	padding: 10%;
+}
+.tamaño{
+	width: 40%;
+	height: 30em;
+	background-color: aliceblue;
+}
+/*iconos de pag dashboard*/
+
+.icono:hover .apareceTex {
+    border-bottom: 1px solid #ffffff;
+    background:#ffffff;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.apareceTex {
+    padding: 15px;
+    text-align: center;
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+.apareceTex .fa{
+    font-size: 46px;
+    margin-top: 20px;
+}
+.icono:hover p {
+    color: red;
+    background:white;
+}
+.icono p {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+.candyK{
+    background-color: #9C4C9D;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.candyK:hover{
+    background:#E26EAB;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);   
+}
+
+
+@-webkit-keyframes img-circle
+{
+15%
+{
+-webkit-transform: translateX(5px);
+transform: translateX(5px);
+}
+30%
+{
+-webkit-transform: translateX(-5px);
+transform: translateX(-5px);
+}
+50%
+{
+-webkit-transform: translateX(3px);
+transform: translateX(3px);
+}
+65%
+{
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+}
+80%
+{
+-webkit-transform: translateX(2px);
+transform: translateX(2px);
+}
+100%
+{
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+}
+@keyframes swing
+{
+15%
+{
+-webkit-transform: translateX(5px);
+transform: translateX(5px);
+}
+30%
+{
+-webkit-transform: translateX(-5px);
+transform: translateX(-5px);
+}
+50%
+{
+-webkit-transform: translateX(3px);
+transform: translateX(3px);
+}
+65%
+{
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+}
+80%
+{
+-webkit-transform: translateX(2px);
+transform: translateX(2px);
+}
+100%
+{
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+}
+.img-circle:hover{
+-webkit-animation: swing 1s ease;
+animation: swing 1s ease;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
+}
+/*reloj dashboard*/
+.clock{
+	background-color: aqua;
+	width: 3% 3%;
+	color: white;
+}
+/*cajas bar progres*/
+.caja{
+	background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
